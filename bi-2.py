@@ -1660,22 +1660,7 @@ pip install lightgbm catboost
 # 
 #
 
-from pyngrok import ngrok
-ngrok.set_auth_token("2wLqFPF5EXdruJ5BgU6IfH33MNm_5e3Yvb1SSn9yJPswUfLw")
 
-!ngrok config add-authtoken 2wLqFPF5EXdruJ5BgU6IfH33MNm_5e3Yvb1SSn9yJPswUfLw
-
-from pyngrok import ngrok
-
-public_url = ngrok.connect(8501)
-print("Streamlit app URL:", public_url)
-
-!streamlit run streamlit_app.py &> /dev/null &
-# Keep the session alive to prevent Colab shutdown
-
-import time
-while True:
-    time.sleep(1160)
 
 
 

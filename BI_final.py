@@ -23,7 +23,7 @@ import seaborn as sns
 """**clean_weather_data and capture functions**"""
 
 
-%%writefile streamlit_app.py
+
 import streamlit as st
 import streamlit as st
 import pandas as pd

@@ -17,11 +17,6 @@ import seaborn as sns
 
 """# Cicalino"""
 
-!pip install streamlit pyngrok
-
-pip install lightgbm catboost
-
-
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile streamlit_app.py

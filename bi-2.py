@@ -13,7 +13,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-!pip install pmdarima==2.0.3
+
 
 """# Cicalino"""
 

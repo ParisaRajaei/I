@@ -4,7 +4,6 @@ from datetime import timedelta
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-#tet
 
 """# Cicalino"""
 

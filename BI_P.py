@@ -28,12 +28,12 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 # Load Cicalino 1
-capture_c1 = pd.read_excel("grafico-delle-catture (Cicalino 1).xlsx")
-weather_c1 = pd.read_excel("dati-meteo-storici (Cicalino 1).xlsx",header=[0, 1])
+capture_c1 = pd.read_excel("grafico-delle-catture (Cicalino 1).xls")
+weather_c1 = pd.read_excel("dati-meteo-storici (Cicalino 1).xls",header=[0, 1])
 
 # Load Cicalino 2
-capture_c2 = pd.read_excel("grafico-delle-catture (Cicalino 2).xlsx")
-weather_c2 = pd.read_excel("dati-meteo-storici (Cicalino 2).xlsx",header=[0, 1])
+capture_c2 = pd.read_excel("grafico-delle-catture (Cicalino 2).xls")
+weather_c2 = pd.read_excel("dati-meteo-storici (Cicalino 2).xls",header=[0, 1])
 
 
 def run_eda(df):
@@ -388,12 +388,12 @@ if current_page == "Weather Overview":
     final_cicalino['location'] = 'Cicalino'
 
     # --- Create final_imola ---
-    capture_i1 = pd.read_excel("grafico-delle-catture (Imola 1).xlsx")
-    weather_i1 = pd.read_excel("dati-meteo-storici (Imola 1).xlsx", header=[0, 1])
-    capture_i2 = pd.read_excel("grafico-delle-catture (Imola 2).xlsx")
-    weather_i2 = pd.read_excel("dati-meteo-storici (Imola 2).xlsx", header=[0, 1])
-    capture_i3 = pd.read_excel("grafico-delle-catture (Imola 3).xlsx")
-    weather_i3 = pd.read_excel("dati-meteo-storici (Imola 3).xlsx", header=[0, 1])
+    capture_i1 = pd.read_excel("grafico-delle-catture (Imola 1).xls")
+    weather_i1 = pd.read_excel("dati-meteo-storici (Imola 1).xls", header=[0, 1])
+    capture_i2 = pd.read_excel("grafico-delle-catture (Imola 2).xls")
+    weather_i2 = pd.read_excel("dati-meteo-storici (Imola 2).xls", header=[0, 1])
+    capture_i3 = pd.read_excel("grafico-delle-catture (Imola 3).xls")
+    weather_i3 = pd.read_excel("dati-meteo-storici (Imola 3).xls", header=[0, 1])
 
     df_i1 = merge_weather_with_capture(clean_weather_data(weather_i1), clean_capture(capture_i1))
     df_i2 = merge_weather_with_capture(clean_weather_data(weather_i2), clean_capture(capture_i2))
@@ -959,14 +959,14 @@ if current_page == "Imola":
         st.pyplot(fig)
 
     # Load Imola datasets
-    capture_i1 = pd.read_excel("grafico-delle-catture (Imola 1).xlsx")
-    weather_i1 = pd.read_excel("dati-meteo-storici (Imola 1).xlsx", header=[0, 1])
+    capture_i1 = pd.read_excel("grafico-delle-catture (Imola 1).xls")
+    weather_i1 = pd.read_excel("dati-meteo-storici (Imola 1).xls", header=[0, 1])
 
-    capture_i2 = pd.read_excel("grafico-delle-catture (Imola 2).xlsx")
-    weather_i2 = pd.read_excel("dati-meteo-storici (Imola 2).xlsx", header=[0, 1])
+    capture_i2 = pd.read_excel("grafico-delle-catture (Imola 2).xls")
+    weather_i2 = pd.read_excel("dati-meteo-storici (Imola 2).xls", header=[0, 1])
 
-    capture_i3 = pd.read_excel("grafico-delle-catture (Imola 3).xlsx")
-    weather_i3 = pd.read_excel("dati-meteo-storici (Imola 3).xlsx", header=[0, 1])
+    capture_i3 = pd.read_excel("grafico-delle-catture (Imola 3).xls")
+    weather_i3 = pd.read_excel("dati-meteo-storici (Imola 3).xls", header=[0, 1])
 
     # Merge and clean
     df_i1 = merge_weather_with_capture(clean_weather_data(weather_i1), clean_capture(capture_i1))
@@ -1222,12 +1222,12 @@ final_cicalino = pd.concat([combineed_Cicalino1_features, combineed_Cicalino2_fe
 final_cicalino['location'] = 'Cicalino'  # unify location if you want one name
 
 # --- Create final_imola ---
-capture_i1 = pd.read_excel("grafico-delle-catture (Imola 1).xlsx")
-weather_i1 = pd.read_excel("dati-meteo-storici (Imola 1).xlsx", header=[0, 1])
-capture_i2 = pd.read_excel("grafico-delle-catture (Imola 2).xlsx")
-weather_i2 = pd.read_excel("dati-meteo-storici (Imola 2).xlsx", header=[0, 1])
-capture_i3 = pd.read_excel("grafico-delle-catture (Imola 3).xlsx")
-weather_i3 = pd.read_excel("dati-meteo-storici (Imola 3).xlsx", header=[0, 1])
+capture_i1 = pd.read_excel("grafico-delle-catture (Imola 1).xls")
+weather_i1 = pd.read_excel("dati-meteo-storici (Imola 1).xls", header=[0, 1])
+capture_i2 = pd.read_excel("grafico-delle-catture (Imola 2).xls")
+weather_i2 = pd.read_excel("dati-meteo-storici (Imola 2).xls", header=[0, 1])
+capture_i3 = pd.read_excel("grafico-delle-catture (Imola 3).xls")
+weather_i3 = pd.read_excel("dati-meteo-storici (Imola 3).xls", header=[0, 1])
 
 df_i1 = merge_weather_with_capture(clean_weather_data(weather_i1), clean_capture(capture_i1))
 df_i2 = merge_weather_with_capture(clean_weather_data(weather_i2), clean_capture(capture_i2))
